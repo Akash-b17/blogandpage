@@ -30,7 +30,7 @@
   <meta name="twitter:description" content="Learn 5 actionable tips for healthy living in 2025. Boost your mental and physical wellness through simple, science-backed habits." />
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1554284126-aa88f22d8b74?auto=format&fit=crop&w=1000&q=80" />
 
-  <!-- Structured Data -->
+  <!-- Article Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -54,8 +54,38 @@
   }
   </script>
 
+  <!-- FAQ Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "How much exercise should I do weekly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Aim for at least 150 minutes of moderate aerobic activity per week as recommended by WHO."
+      }
+    }, {
+      "@type": "Question",
+      "name": "What foods should I avoid for better health?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Limit ultra-processed foods, sugary drinks, and excessive saturated fats."
+      }
+    }, {
+      "@type": "Question",
+      "name": "How important is sleep for health?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sleep is essential for mental and physical health; adults should aim for 7-9 hours nightly."
+      }
+    }]
+  }
+  </script>
+
   <!-- Tailwind CSS CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
 
 </head>
 <body class="bg-gray-50 text-gray-800 leading-relaxed">
@@ -76,7 +106,7 @@
 
     <img src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74?auto=format&fit=crop&w=1000&q=80" 
          alt="Person jogging at sunrise to represent a healthy lifestyle"
-         class="rounded-xl mb-6 w-full">
+         class="rounded-xl mb-6 w-full" />
 
     <section>
       <h2 class="text-2xl font-semibold mb-2">1. Prioritize Mental Health</h2>
@@ -85,7 +115,7 @@
 
     <section class="mt-6">
       <h2 class="text-2xl font-semibold mb-2">2. Move Your Body Daily</h2>
-      <p>Physical activity doesn’t require a gym. Daily movement like walking, stretching, or cycling improves heart health, boosts energy, and supports brain function. According to the <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" class="text-blue-600 underline">World Health Organization</a>, adults should aim for at least 150 minutes of moderate activity per week.</p>
+      <p>Physical activity doesn’t require a gym. Daily movement like walking, stretching, or cycling improves heart health, boosts energy, and supports brain function. According to the <a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener" class="text-blue-600 underline">World Health Organization</a>, adults should aim for at least 150 minutes of moderate activity per week.</p>
     </section>
 
     <section class="mt-6">
@@ -107,10 +137,25 @@
       <h3 class="text-xl font-semibold mb-2">Explore More Wellness Topics</h3>
       <p>Visit our <a href="#related" class="text-blue-600 underline">Wellness Blog</a> for more guides on mental health, fitness, and nutrition. Stay tuned for upcoming content on meditation practices and plant-based diets!</p>
     </section>
+
+    <!-- FAQ Section -->
+    <section class="mt-12 bg-white rounded shadow p-6">
+      <h2 class="text-2xl font-bold mb-4">Frequently Asked Questions</h2>
+      <dl>
+        <dt class="font-semibold mt-4">How much exercise should I do weekly?</dt>
+        <dd class="ml-4">Aim for at least 150 minutes of moderate aerobic activity per week as recommended by WHO.</dd>
+
+        <dt class="font-semibold mt-4">What foods should I avoid for better health?</dt>
+        <dd class="ml-4">Limit ultra-processed foods, sugary drinks, and excessive saturated fats.</dd>
+
+        <dt class="font-semibold mt-4">How important is sleep for health?</dt>
+        <dd class="ml-4">Sleep is essential for mental and physical health; adults should aim for 7-9 hours nightly.</dd>
+      </dl>
+    </section>
   </main>
 
   <footer class="text-center text-sm text-gray-500 py-6 mt-12 border-t">
-    <p>&copy; 2025 Wellness Living. All rights reserved. | <a href="https://www.who.int" target="_blank" class="text-blue-500 underline">WHO.org</a></p>
+    <p>&copy; 2025 Wellness Living. All rights reserved. | <a href="https://www.who.int" target="_blank" rel="noopener" class="text-blue-500 underline">WHO.org</a></p>
   </footer>
 </body>
 </html>
